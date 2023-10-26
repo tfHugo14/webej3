@@ -20,7 +20,7 @@
                 <li><a href="./section.html">Gossip</a></li>
             </ul>
         </nav>
-        
+
         <main>
             <section>
                 <article>
@@ -32,6 +32,7 @@
                 </article>
                 <article>
                     <br>
+                    <hr>
                     <p><strong>NewUser97124</strong> 12/09/2023</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iste modi consectetur eos quidem!</p>
                     <p><strong>NewUser854G6</strong> 02/10/2023</p>
@@ -40,26 +41,36 @@
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p><strong>NewUser982678</strong> 22/11/2023</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptatibus ea dolorum est beatae sequi quidem cupiditate saepe deserunt obcaecati.</p>
-                </article>
+                 </article>
                 
-                <form action="">
-                    <hr>
-                    <h3>Leave a comment!</h3>
-                    <label>Username</label>
-                    <br>
-                    <input type="text" name="name" >
-                    <br>
-                    <br>
-                    <label>Title</label>
-                    <br>
-                    <input type="text" name="name" >
-                    <br>
-                    <br>
-                    <label>Text</label>
-                    <br>
-                    <textarea id="text" name="comment" cols="60" rows="5"></textarea>
-                </form>
+                <form action="null.php" method="get">
+                    <fieldset>
+                        <legend>Leave us a comment!</legend>
+                        
+                        <label for="username">Username</label>
+                            <br>
+                        <input type="text" name="username">
+                            <br>
+                            <br>
+                        <label for="commenttitle">Coment Title</label>
+                            <br>
+                        <input type="text" name="title" >
+                            <br>
 
+                        <p>Before commentig, do you want to recibe notifications form our online newspaper?</p>
+                        <input type="radio" name="yesno" id="yesno" value="yes"><label for="yesno">Yes</label>
+                        <input type="radio" name="yesno" id="yesno" value="no"><label for="yesno">No</label>
+                            <hr>
+
+                        <label for="commenttext">Write Your Comment Here!</label>
+                            <br>
+                        <textarea id="text" name="comment" cols="60" rows="5"></textarea>
+                            <br>
+  
+
+                        <input type="submit" value="submit">
+                    </fieldset>
+                </form>
             </section>
         </main>
 
